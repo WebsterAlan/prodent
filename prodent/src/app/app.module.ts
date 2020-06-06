@@ -5,11 +5,13 @@ import { AppComponent } from './app.component';
 import { OauthComponent } from './oauth/oauth.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatMenuModule } from '@angular/material/menu';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    OauthComponent
+    OauthComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
