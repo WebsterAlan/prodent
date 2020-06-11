@@ -20,8 +20,9 @@ import { LoginService } from 'src/app/service/login.service';
 
   ngOnInit(): void {}
 
-   efetuarLogin( email,password ){
+   efetuarLogin(){
       //this.loginModel.consultarUsuario(email,password);
+      console.log("teste");
      
   }
 
