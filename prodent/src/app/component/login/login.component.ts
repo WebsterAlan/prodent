@@ -21,8 +21,9 @@ import { LoginService } from 'src/app/service/login.service';
   ngOnInit(): void {}
 
    efetuarLogin(){
+    this.loginService.consultUser();
       //this.loginModel.consultarUsuario(email,password);
-      console.log("teste");
+      //console.log("teste");
      
   }
 

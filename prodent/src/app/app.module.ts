@@ -5,6 +5,8 @@ import { AppComponent } from './app.component';
 import { OauthComponent } from './component/oauth/oauth.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatMenuModule } from '@angular/material/menu';
+import { MatButtonModule } from '@angular/material/button';
+import { MatFormFieldModule } from '@angular/material/form-field';
 import { LoginComponent } from './component/login/login.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
@@ -19,6 +21,8 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatMenuModule,
+    MatButtonModule,
+    MatFormFieldModule,
     FormsModule,
     ReactiveFormsModule,
   ],
