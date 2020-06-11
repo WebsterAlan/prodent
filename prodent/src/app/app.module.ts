@@ -6,6 +6,7 @@ import { OauthComponent } from './component/oauth/oauth.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatMenuModule } from '@angular/material/menu';
 import { LoginComponent } from './component/login/login.component';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,8 @@ import { LoginComponent } from './component/login/login.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatMenuModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

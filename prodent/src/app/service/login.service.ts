@@ -1,13 +1,13 @@
 import { Injectable } from '@angular/core';
 import {Observable} from  'rxjs';
-import {Http} from '@angular/http';
+import {HttpClient} from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class LoginService {
 
-  constructor(private http : Http) { }
+  constructor(private http : HttpClient ) { }
 
   private serviceURL = "https://";
 
@@ -15,8 +15,9 @@ export class LoginService {
     
 
   }
+
   //get users 
-  getUsers() : Observable<String>{
+  getUsers() : Observable<Object>{
     //get,map in method and handler error
     return this.http.get(this.serviceURL);
   }
