@@ -9,12 +9,14 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { LoginComponent } from './component/login/login.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { LoginFormComponent } from './form/login-form/login-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     OauthComponent,
-    LoginComponent
+    LoginComponent,
+    LoginFormComponent
   ],
   imports: [
     BrowserModule,

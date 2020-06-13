@@ -30,17 +30,4 @@
 
 
 </body> -->
-
-
-<form>
-  <mat-form-field>
-    <mat-label>Email</mat-label>
-    <input matInput [formControl] = "formCtrlLogin">
-  </mat-form-field>
-
-  <mat-form-field>
-    <mat-label>Password</mat-label>
-    <input matInput [formControl] = "formCtrlLogin">
-  </mat-form-field>
-  <button mat-button type="submit" (click)="efetuarLogin()">Enter</button>
-</form>
+<app-login-form></app-login-form>
