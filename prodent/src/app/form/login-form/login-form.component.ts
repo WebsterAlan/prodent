@@ -9,19 +9,19 @@ import { Login } from 'src/app/bean/login';
 })
 export class LoginFormComponent implements OnInit {
 
-  constructor() {}
-  
-  formLogin : FormGroup;
-  
-  ngOnInit(): void {
-      this.createForm(new Login());
-  }
+   formLogin;
 
-  createForm(login : Login){
-    this.formLogin = new FormGroup({
-      email : new FormControl(login.email),
-      password : new FormControl(login.password)
-    })
-  }
+  constructor(private formBuilder : FormBuilder) {
+      this.formLogin = formBuilder.group(
+        {}
+      );
+
+  };
+  
+  
+  
+  ngOnInit(): void {}
+
+  
 
 }
