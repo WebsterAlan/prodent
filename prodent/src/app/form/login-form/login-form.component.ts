@@ -13,10 +13,23 @@ export class LoginFormComponent implements OnInit {
 
   constructor(private formBuilder : FormBuilder) {
       this.formLogin = formBuilder.group(
-        {}
+        {
+           email : '',
+           password : '',
+        }
       );
 
   };
+
+  onSubmit(customerData) {
+    // Process checkout data here
+    //this.items = this.cartService.clearCart();
+    console.log(this.formLogin.value);
+    this.formLogin.reset();
+    
+
+    console.warn('Your order has been submitted', customerData);
+  }
   
   
   

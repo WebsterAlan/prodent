@@ -1,12 +1,21 @@
-<form>
-    <mat-form-field>
-      <mat-label>Email</mat-label>
-      <input matInput [formControl] = "formCtrlLogin">
-    </mat-form-field>
+<form [formGroup]="formLogin" (ngSubmit)="onSubmit(formLogin.value)">
+
+
+  <div>
+    <label for="name">
+      Name
+    </label>
+    <input id="name" type="text" formControlName="email">
+  </div>
+
+  <div>
+    <label for="address">
+      Address
+    </label>
+    <input id="address" type="text" formControlName="password">
+  </div>
+
   
-    <mat-form-field>
-      <mat-label>Password</mat-label>
-      <input matInput [formControl] = "formCtrlLogin">
-    </mat-form-field>
-    <button mat-button type="submit" (click)="efetuarLogin()">Enter</button>
-  </form>
+  <button class="button" type="submit">Purchase</button>
+
+</form>

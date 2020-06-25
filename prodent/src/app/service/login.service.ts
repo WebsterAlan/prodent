@@ -7,9 +7,9 @@ import {HttpClient} from '@angular/common/http';
 })
 export class LoginService {
 
-  constructor( private http : HttpClient) { }
+  //constructor( private http : HttpClient) { }
 
-  private serviceURL = "https://";
+  //private serviceURL = "https://";
 
   consultUser(){
     
@@ -17,10 +17,10 @@ export class LoginService {
   }
 
   //get users 
-  getUsers() : Observable<Object>{
+  /*getUsers() : Observable<Object>{
     //get,map in method and handler error
     return this.http.get(this.serviceURL);
-  }
+  }*/
 
 
 }
